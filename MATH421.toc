@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Julia Set}{2}
+\contentsline {subsection}{\numberline {2.1}Definition}{2}
+\contentsline {subsection}{\numberline {2.2}Properties}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Invariance and Symmetry }{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Self-Similarity}{4}
+\contentsline {subsubsection}{\numberline {2.2.3}Fixed Points and Strange Attractors}{4}
+\contentsline {subsection}{\numberline {2.3}Examples}{5}
+\contentsline {section}{\numberline {3}Application to Image Encryption/Decryption}{5}
+\contentsline {subsection}{\numberline {3.1}Fractal Dictionary}{6}
+\contentsline {subsection}{\numberline {3.2}Collage Theorem}{6}
+\contentsline {section}{\numberline {4}Conclusion}{6}

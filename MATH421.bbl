@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{cotty}
+{\sc K.~J. Balashov}, {\em Fractal compression}, Apr 2015.
+\newblock http://cotty.16x16.com/compress.
+
+\bibitem{hypertext}
+{\sc G.~Elert}, {\em Strange \& complex}, Apr 2015.
+\newblock http://hypertextbook.com/chaos/22.shtml.
+
+\bibitem{Fassett}
+{\sc J.~E. Fassett}, {\em Eigenvalues in filled julia sets}, Mathematics
+  Magazine, 84 (2011), pp.~221--227.
+
+\bibitem{Frame}
+{\sc M.~Frame, B.~Mandlebrot, and N.~Neger}, {\em Fractal geometry}, Apr 2015.
+\newblock http://classes.yale.edu/fractals/MandelSet/welcome.html.
+
+\bibitem{hans}
+{\sc H.~Lauwerier}, {\em Fractals Endlessley Repeated Geometrical Figures},
+  Princeton University Press, 1991.
+
+\bibitem{goodwin}
+{\sc M.~McGoodwin}, {\em Julia jewels: An exploration of julia sets}, Apr 2015.
+\newblock http://hypertextbook.com/chaos/22.shtml.
+
+\bibitem{ifs}
+{\sc S.~Nikiel}, {\em Iterated Function Systems for Real-Time Image Synthesis},
+  Springer London, 2007.
+
+\bibitem{beauty}
+{\sc H.~Peitgen and R.~P.H.}, {\em The Beauty of Fractals}, Springer-Verlag
+  Berlin Heidelberg, 1986.
+
+\bibitem{tokyo}
+{\sc M.~Shishikura}, {\em Topologocal, geometric and complex analytic
+  properties of julia sets}, International Mathematical Union Proceedins 1994,
+  9 (1994), pp.~886--895.
+
+\bibitem{solomak}
+{\sc B.~Solomak}, {\em Additional facts about julia sets}, Apr 2015.
+\newblock http://www.math.washington.edu/~solomyak/TEACH/435/Julia.pdf.
+
+\bibitem{iraq}
+{\sc unknown currently}, {\em Collecting between the collage theorem and the
+  optimization method to solve inverse problem of fracal image}, Journal of
+  Kerbala University, 6 (2008), pp.~256--259.
+
+\bibitem{yang}
+{\sc J.~Yang}, {\em Properties of julia sets}, Apr 2015.
+\newblock http://www.emba.uvm.edu/~jxyang/teaching/Math266notes10.pdf.
+
+\bibitem{algo}
+{\sc S.~Yuanyuan, X.~Rudan, K.~Ruiquin, and L.~Chen}, {\em An image encryption
+  algorithm utilizing julia sets and hilbert curves}, PLoS ONE, 9 (2014),
+  p.~e84655.
+
+\bibitem{china}
+{\sc S.~Yuanyuan, X.~Rudan, and H.~Xiaopeng}, {\em Image compression and
+  encryption scheme using fractal dictionary and julia set}, IET Image
+  Processing, 9 (2015), pp.~173--183.
+
+\end{thebibliography}
