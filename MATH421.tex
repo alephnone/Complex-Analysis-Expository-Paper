@@ -23,10 +23,11 @@
 \tableofcontents
 \newpage
 \section{Introduction}
+{\parindent0pt
 A fractal is a mathematical set that exhibits a repeating pattern visible regardless of scale. These patterns are never ending and infinitely complex. Built by recursive patterns of functions, called iterated function systems, these geometric objects display various dynamic behavior . Visually, thedr is also a beautiful pieced of art that can be explored mathematically as well as in the natural world: typically in the form of ferns and mountain ranges. \\
 
 In the early 20th century, French mathematician Gaston Julia studied the iteration of these polynomials and rational functions and game up with what we now know as the Julia set. He investigated this sets propteries and behavior which he published in his 1918 paper “Mémoire sur l'itération des fonctions rationnelles”,  later popularized by French mathematician Benoit Mandlebrot in his own works. 
-
+}
 \section{Julia Set}
 
 \subsection{Definition}
@@ -106,24 +107,61 @@ since complex numbers can be uniquely mapped into real space,  a one-to-one rela
 
 
 \section{Application to Image Encryption/Decryption}
+{\parindent0pt
 Image encryption is an effective technique to protect image security. Using a variety of algorithms, images can be scrambled into into keys which, given a cipher key, can be deciphered to reveal the original image. This can be used to transfer sensitive image documents via telecommunications, satellite and the internet without the fear of third party tampering or evesdropping. \\
 
 By using fractal sets, in particular the Julia set, to encode graphical information images can be efficiently encrypted at high quality with superior compression when compared to other methods.\cite{cotty} Using the Julia set, only a few parameters are needed to generate the ciphers keys \cite{algo} and because of the sets properties, these keys are highly sensitive making them difficult to crack. Julia works well as a method of encryption because it also compresses the image \cite{china} making it harder to decrypt. Fractal based and chaos based ciphers have a smaller storage cost and have input sensitivity \cite{china}
-
+}
 
 \subsection{Fractal Dictionary}
+{\parindent0pt
+Graphical images can be encoded using fractal dictionary.\cite{china} Devised by Barnesley, an image can be partioned into non-overlapping blocks (range blocks) and  further sub-divided further into overlapping blocks (domain blocks). When the image is titled by range blocks which are each mapped individually to a domain block these mappings for a transform over the entire image. \\
 
-Graphical images can be encoded using fractal dictionary.\cite{china} Devised by Barnesley, an image can be partioned into non-overlapping blocks (range blocks) and  further sub-divided further into overlapping blocks (domain blocks). When the image is titled by range blocks which are each mapped individually to a domain block these mappins for a transform over the entire image. The image can be encoded and decoded using collage theorem\cite{iraq} which uses an iterated function with an attractor close to some given set.
+It is possible to use this transformation to compress a gray-scale image to smaller size using a method called block truncated coding \cite{china}. This technique results in small images that do not lose information and generate artifacts during the compression process. A block can be converted to a binary value using:
+\begin{align*}
+\hat{x} = 
+\begin{cases}
+1, \hspace{10mm} x \ge x_{ave}\\
+0, \hspace{10mm} x <  x_{ave}
+\end{cases}
+\end{align*}
 
+Where $x$ is a single pixel in a block of the image and $x_{ave}$ is the average value of that pixel. This generates a binary matrix containing single elements $\hat{x}$. If this matrix is treated as a vector containing a binary sequence then corresponding decimal value is the BTC value allowing the image to be compressed on whatever scale we choose (based on the size of the blocks). The resulting compressed image can then be encoded and decoded using collage theorem\cite{iraq} which requires an iterated function with an attractor close to some given set.
 
+}
 \subsection{Collage Theorem}
-Given an image in fractal geometry  Barnesleys collage theorem allows us to approximate the iterated function system associated with that image.\cite{iraq} Since fractal sets generally contain an infinite number of points with varying organization, specifying each point in the set is impossible. \cite{ifs}An approximating set, based on  relations between the original image of the attractor, is used to find the contractive (at most one fixed point) mapping to recreate the image. 
+{\parindent0pt
+Given an image in fractal geometry  Barnesleys collage theorem allows us to approximate the iterated function system associated with that image.\cite{iraq} Since fractal sets generally contain an infinite number of points with varying organization, specifying each point in the set is impossible. \cite{ifs}An approximating set, based on  relations between the original image of the attractor, is used to find the contractive (at most one fixed point) mapping to recreate the image. \\ 
 
-\cite{china} explains that given a domain block of size BxB the range black size is RxR for an NxN image. There are (n-b+1)x(N-B+1) overlapping domain blocks and (N/R)x(N/R)  non-overlapping range blocks. The scheme uses self-similarity in an image and attempts to find the most similar looking domain block that minimizes distortion. Unfortunately this is slow compuationally, a 256x256 image would require 62 001 blocks of size 8x8 which means searching would require 62001x8 comparissions per range block. 
+\cite{china} explains that given a domain block of size $B \times B$ the range black size is $R \times R$ for an $N \times N$ image. There are $(N-B+1) \times (N-B+1)$ overlapping domain blocks and $(N/R) \times (N/R)$ non-overlapping range blocks. The scheme uses self-similarity in an image and attempts to find the most similar looking domain block that minimizes distortion. While this effective at accurated encoding an decoding a given image it is unfortunately slow computationally. A 256x256 image would require 62 001 blocks of size 8x8 which means searching would require 62001x8 comparissions per range block. 
+}
+\subsection{Encryption and Decryption}
+{\parindent0pt
+\subsubsection{The Hilbert Curve}
+A two dimensional hilbert surve is draw by dividing a square evenly into four. From the center of the top-left square and a curve is drawn to the center of the bottom-left square, then to the center of the bottom-right square and finally to the center of the top right square. \cite{algo} Repeating this process over and over by continually dividing squares into four other squares and drawing in the same manner the result is a curve which fills the entire original square. \\
+
+Using an RGB colour model, each pixel in an image can be represented using 8 binary digits. By scrambling this bits in each colour layer (Red, Green, Blue) along the Hilbert curve we create a stream cipher. Give $A$, $B$, $C$ co-ordinates of an image with pixels:
+\begin{align*}
+ (a_1,a_2,a_3,a_4,a_5,a_6,a_7,a_8) \\
+(b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8) \\
+(c_1,c_2,c_3,c_4,c_5,c_6,c_7,c_8)
+\end{align*}
+then \\
+$\{a_i  	\mid  i = 2k+1\}  = a_i \wedge b_j \forall k,j \in \mathbb{Z} $ \\
+and \\
+$\{a_i  	\mid  i = 2k\}  = a_i \wedge c_j \forall k,j \in \mathbb{Z} $ \\
+
+descibes how the bits are scrambled. \cite{algo} We obtain keys for encrypting and image after we scramble the Julia set by the Hilbert Curve.
+
+\subsubsection{Encoding and Decoding}
+THIS IS THE LAST BIT OF GROSS EGREGOUS CITED TEXT I HAVE TO WRITE!!! YAY!! THEN PICTURES AND EDITING AND FLUFF!!
+}
+\subsection{Examples}
+
 
 \section{Conclusion}
 a conclusion goes here
-\newpage
+
 \bibliographystyle{siam}
 \bibliography{mybib}
 

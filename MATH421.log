@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.4)  7 APR 2015 20:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.4)  8 APR 2015 23:01
 entering extended mode
 **C:/Users/Deo/Desktop/paper/MATH421.tex
 (C:/Users/Deo/Desktop/paper/MATH421.tex
@@ -171,7 +171,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write3
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
@@ -186,56 +186,76 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[5] [6] (C:\Users\Deo\Desktop\paper\MATH421.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--153
+
+ []
+
+(C:\Users\Deo\Desktop\paper\MATH421.bbl [7]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\OT1/cmr/m/sc/12 K. J. Bal-ashov\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Frac-tal c
 om-pres-sion\OT1/cmr/m/n/12 , Apr 2015.
@@ -259,7 +279,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 -lia sets\OT1/cmr/m/n/12 , Apr 2015.
  []
 
-[7]) [8] (C:\Users\Deo\Desktop\paper\MATH421.aux) ) 
+[8]) [9] (C:\Users\Deo\Desktop\paper\MATH421.aux) ) 
 Here is how much of TeX's memory you used:
  2336 strings out of 493921
  30754 string characters out of 3147289
@@ -280,9 +300,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on MATH421.pdf (9 pages, 159756 bytes).
+Output written on MATH421.pdf (10 pages, 168494 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,4 +9,8 @@
 \contentsline {section}{\numberline {3}Application to Image Encryption/Decryption}{5}
 \contentsline {subsection}{\numberline {3.1}Fractal Dictionary}{6}
 \contentsline {subsection}{\numberline {3.2}Collage Theorem}{6}
-\contentsline {section}{\numberline {4}Conclusion}{6}
+\contentsline {subsection}{\numberline {3.3}Encryption and Decryption}{7}
+\contentsline {subsubsection}{\numberline {3.3.1}The Hilbert Curve}{7}
+\contentsline {subsubsection}{\numberline {3.3.2}Encoding and Decoding}{7}
+\contentsline {subsection}{\numberline {3.4}Examples}{8}
+\contentsline {section}{\numberline {4}Conclusion}{8}

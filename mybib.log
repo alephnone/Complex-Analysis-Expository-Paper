@@ -1,0 +1,26 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2015.4.5)  7 APR 2015 20:20
+entering extended mode
+**C:/Users/Deo/Desktop/paper/mybib.bib
+(C:/Users/Deo/Desktop/paper/mybib.bib
+Overfull \hbox (36.30162pt too wide) in paragraph at lines 71--81
+\tenrm An-a-lytic Prop-er-ties of Ju-lia Sets, JOUR-NAL=International Math-e-ma
+t-i-cal Union Pro-ceed-ins 1994, MONTH=August,|
+
+\hbox(6.94444+1.94444)x469.75499, glue set - 1.0
+.\tenrm A
+.\tenrm n
+.\discretionary
+..\tenrm -
+.\tenrm a
+.\discretionary
+..\tenrm -
+.etc.
+
+)
+*
+! Emergency stop.
+<*> C:/Users/Deo/Desktop/paper/mybib.bib
+                                        
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
