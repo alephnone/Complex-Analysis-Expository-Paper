@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.4)  8 APR 2015 23:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.4)  10 APR 2015 22:44
 entering extended mode
 **C:/Users/Deo/Desktop/paper/MATH421.tex
 (C:/Users/Deo/Desktop/paper/MATH421.tex
@@ -235,12 +235,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
@@ -255,54 +255,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--153
 
  []
 
-(C:\Users\Deo\Desktop\paper\MATH421.bbl [7]
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+(C:\Users\Deo\Desktop\paper\MATH421.bbl [8]
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 []\OT1/cmr/m/sc/12 K. J. Bal-ashov\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Frac-tal c
 om-pres-sion\OT1/cmr/m/n/12 , Apr 2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
 []\OT1/cmr/m/sc/12 G. El-ert\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Strange & com-pl
 ex\OT1/cmr/m/n/12 , Apr 2015.
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 41--43
+Underfull \hbox (badness 7740) in paragraph at lines 46--48
 []\OT1/cmr/m/sc/12 B. Solo-mak\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Ad-di-tional f
 acts about ju-lia sets\OT1/cmr/m/n/12 , Apr 2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 []\OT1/cmr/m/sc/12 J. Yang\OT1/cmr/m/n/12 , \OT1/cmr/m/it/12 Prop-er-ties of ju
 -lia sets\OT1/cmr/m/n/12 , Apr 2015.
  []
 
-[8]) [9] (C:\Users\Deo\Desktop\paper\MATH421.aux) ) 
+[9]) [10] (C:\Users\Deo\Desktop\paper\MATH421.aux) ) 
 Here is how much of TeX's memory you used:
- 2336 strings out of 493921
- 30754 string characters out of 3147289
+ 2337 strings out of 493921
+ 30761 string characters out of 3147289
  87214 words of memory out of 3000000
- 5635 multiletter control sequences out of 15000+200000
+ 5636 multiletter control sequences out of 15000+200000
  11678 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,15n,32p,843b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on MATH421.pdf (10 pages, 168494 bytes).
+<C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on MATH421.pdf (11 pages, 173153 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

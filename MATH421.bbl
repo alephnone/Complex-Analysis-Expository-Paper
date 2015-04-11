@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{moham}
+{\sc M.~A. Alia and A.~B. Samsudin}, {\em A new public-key cryptosystem based
+  on mandlebrot and julia fractal sets}, Asian Journal of Information
+  Technology, 6 (2007), pp.~567--575.
+
 \bibitem{cotty}
 {\sc K.~J. Balashov}, {\em Fractal compression}, Apr 2015.
 \newblock http://cotty.16x16.com/compress.

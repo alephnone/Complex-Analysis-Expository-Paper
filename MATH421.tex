@@ -106,11 +106,11 @@ since complex numbers can be uniquely mapped into real space,  a one-to-one rela
 }
 
 
-\section{Application to Image Encryption/Decryption}
+\section{Application to Image  Encryption/Decryption and Compression}
 {\parindent0pt
-Image encryption is an effective technique to protect image security. Using a variety of algorithms, images can be scrambled into into keys which, given a cipher key, can be deciphered to reveal the original image. This can be used to transfer sensitive image documents via telecommunications, satellite and the internet without the fear of third party tampering or evesdropping. \\
+Image encryption is an effective technique to protect image security. Using a variety of algorithms, images can be scrambled into into keys which, given a cipher key, can be deciphered to reveal the original image. This can be used to transfer sensitive image documents via telecommunications, satellite and the internet without the fear of third party tampering or evesdropping. Algorithms for such process usually use public key protocol system  to exchange a secret key (or cipher) between two comminucators and then a secret key system to transfer sensistive data. \cite{moham} \\
 
-By using fractal sets, in particular the Julia set, to encode graphical information images can be efficiently encrypted at high quality with superior compression when compared to other methods.\cite{cotty} Using the Julia set, only a few parameters are needed to generate the ciphers keys \cite{algo} and because of the sets properties, these keys are highly sensitive making them difficult to crack. Julia works well as a method of encryption because it also compresses the image \cite{china} making it harder to decrypt. Fractal based and chaos based ciphers have a smaller storage cost and have input sensitivity \cite{china}
+It is possible to generate cryptographic ciphers using fractal systems. Fractal ciphers have a smaller storage cost and also input sensitivity \cite{china} making them very difficult to crack while reducing memory needed to store encrypted information. By using the Julia set in particular to encode graphical information,  images can be efficiently encrypted at high quality with superior compression when compared to other methods, like JPEG.\cite{cotty} Only a few parameters are needed to generate keys  using Julia \cite{algo} and the sets properties create input sensitivy making these compressed images are much more difficult to decrypt. \cite{china}
 }
 
 \subsection{Fractal Dictionary}
@@ -154,7 +154,24 @@ $\{a_i  	\mid  i = 2k\}  = a_i \wedge c_j \forall k,j \in \mathbb{Z} $ \\
 descibes how the bits are scrambled. \cite{algo} We obtain keys for encrypting and image after we scramble the Julia set by the Hilbert Curve.
 
 \subsubsection{Encoding and Decoding}
-THIS IS THE LAST BIT OF GROSS EGREGOUS CITED TEXT I HAVE TO WRITE!!! YAY!! THEN PICTURES AND EDITING AND FLUFF!!
+To encode and send an image to a reciever, public key encryption can be used. The most common algorithm is the RSA scheme which is implemented as follows:\cite{moham} \\
+
+The reciever generates a key by secretly chooses two distinct prime number $(p,q)$ that are similar in size. They then compute $n$ (modulus) as $p \times q$ and $\phi (n) = (p-1)\times (q-1)$. Next they choose the public key $e$ such that $1 < e < \phi (n)$ and $GCD(e, \phi (n)) = 1$. Their decryption key is then $d = e^{-1} \mod \phi(n)$. Finally, they determine the public keys $(e,n)$ and the private keys $\phi (n), d)$.  \\
+
+The sender must obtain the public keys $(e,n)$ and determine the message m to be encoded under the condition that $0 < m < n$, they encode the message as $c = m^{c} \mod n$ and send $c$ to the reciever.\\
+
+The reviever can then decrypt the message they recieve using $m = c^{d} \mod n$ \\
+
+
+Given a Julia scrambled image, the above methodology can be applied to encode an image pixel by pixel using:
+\begin{align*}
+e'_{ij} = (e_{ij} + d_{ij})\mod  l
+\end{align*}
+where $e_{ij}$ is the pixel value of $(i,j)$, $e'_{ij}$ is the pixel value following encryption, $l$ is the number of colours in the image and $d_{ij}$  is the pixel value in the keys obtained from scrambling Julia along the Hilbert Curve. \cite{algo} The reciever can then decrypt the given image using the reverse operation:
+\begin{align*}
+e_{ij} = (e'_{ij} - d_{ij})\mod l
+\end{align*}
+
 }
 \subsection{Examples}
 
