@@ -1,5 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{calc}
 \usepackage{amsfonts}
 \usepackage{commath}
@@ -8,6 +9,15 @@
 
 
 \begin{document}
+\theoremstyle{definition}
+\newtheorem{exmp}{Example}[section]
+
+
+
+
+
+
+
 
 \begin{titlepage}
 \vfill
@@ -24,9 +34,15 @@
 \newpage
 \section{Introduction}
 {\parindent0pt
-A fractal is a mathematical set that exhibits a repeating pattern visible regardless of scale. These patterns are never ending and infinitely complex. Built by recursive patterns of functions, called iterated function systems, these geometric objects display various dynamic behavior . Visually, thedr is also a beautiful pieced of art that can be explored mathematically as well as in the natural world: typically in the form of ferns and mountain ranges. \\
+A fractal is a mathematical set that exhibits a repeating pattern visible regardless of scale. These patterns are never ending and infinitely complex. Built by recursive patterns of functions, called iterated function systems, these geometric objects display various dynamic behavior when modeled in the complex plane. Visually, they are also  beautiful pieces of art that can be explored mathematically, computationally and as a part of our natural world.  Their name was coined by French mathematician Benoit Mandlebrot in 1975 in his research as he used the concept to extend theoretical knowledge of recursive patterns to geometric patterns in nature. \\
 
-In the early 20th century, French mathematician Gaston Julia studied the iteration of these polynomials and rational functions and game up with what we now know as the Julia set. He investigated this sets propteries and behavior which he published in his 1918 paper “Mémoire sur l'itération des fonctions rationnelles”,  later popularized by French mathematician Benoit Mandlebrot in his own works. 
+However fractals did not begin with Mandlebrot, but with early study into complex functions.  An early problem presented by Sir Arthur Cayley in a paper titled "The Newton-Fourier Imaginary problem" (1875) would give way to modern solutions using computers for iterative techniques. Cayley was studying a complex equation using iterative methods to find the roots. Noticing that there were three roots he wondered if it was possible to predict which of the roots some value of z would reach as limit and found that finding the solution to this problem to be an arduous task. Inspired by this study, 20th century French mathematician Gaston Julia began studying the iteration of complex polynomials and rational functions and came up with what we now know as the Julia set. He investigated this sets properties and behavior in depth which he published in his 1918 paper "Mémoire sur l'itération des fonctions rationnelles". His work was later popularized by French mathematician Benoit Mandlebrot which gave way to the modern study of fractals and iterated systems. \\
+
+Herein we will focus on the analysis of the Julia and it's properties in particular as well as an interesting application within the field of computer science for use in image compression and encyption/decryption. 
+
+
+
+
 }
 \section{Julia Set}
 
@@ -85,20 +101,53 @@ Invariance, with respect to a transformation is, given a point $\mathbf{P}$ in a
 Julia also has the property of being point symmetric about the origin\cite{hans}, sets on the real axis are reflection symmetric and those on the complex axis display rotational symmetry.\cite{hypertext} 
 
 \subsubsection{Self-Similarity}
-For a geometric object qualify as a "fractal" it must exhibit some properties. Fractals are figures based on a single repeating motif and an ever reduced scale.\cite{hans} Regardless of how zoomed in (or zoomed) out one views the geometric figure, the shape and apparent motif is identical. They can also be defined as a set of points that are invariant under a semigroup of contractions \cite{hans}. It has already been shown that $J_f$ is invariant above.  \\
+For a geometric object qualify as a "fractal" it must exhibit some properties. Fractals are figures based on a single repeating motif on an ever reduced scale.\cite{hans} Regardless of how zoomed in (or zoomed out) one views the geometric figure, the shape and apparent motif is identical. They can also be defined as a set of points that are invariant under a semigroup of contractions \cite{hans}. It has already been shown that $J_f$ is invariant above.  \\
 
-Julia self-similar \cite{Frame} and in general fragments of the set are strictly similar to the set as a whole \cite{hypertext}. Mandlebrot gave a strict definition of similarity \cite{goodwin} given a rational parameter $r$, positive integer $N$, a bounded set $S$ of points  $(x_1,x_2, \hdots, x_E)$ on a Euclidean geometric space with dimension $E$. $S$ is self-similar if it is the union of $N$ nonoverlapping subsets that are all congruent to $rS$.
+Julia is self-similar \cite{Frame} and, in general fragments, of the set are strictly similar to the set as a whole \cite{hypertext}. Mandlebrot gave a strict definition of similarity\cite{goodwin}: given a rational parameter $r$, positive integer $N$, a bounded set $S$ of points  $(x_1,x_2, \hdots, x_E)$ on a Euclidean geometric space with dimension $E$. $S$ is self-similar if it is the union of $N$ nonoverlapping subsets that are all congruent to $rS$.
 
 \subsubsection{Fixed Points and Strange Attractors}
-A periodic point is a point $z_0 \in \mathbb{C}$ such that $f^{n}(z_0) = z_0$ for some interger value $n \ge 1$. \cite{tokyo} The smallest possible $n$ that satifies this property is called the period of $z_0$.  These points exist between specific regions of the plane and may be called attractoring, repelling or indifferent. \cite{beauty} \cite{tokyo} Attractors compete for influence on the plane and an initial point will be driven towards attractors by the system, else it will remain on the boundry. Similarly, a repelling point drives the initial point away while all other points are indifferent and do not affect points on the plane. The distribution of these points in the plane is commanded by the parameter $c$ which also affects the boundaries of the given regions \cite{beauty}\\
+A periodic point is a point $z_0 \in \mathbb{C}$ such that $f^{n}(z_0) = z_0$ for some interger value $n \ge 1$. \cite{tokyo} The smallest possible $n$ that satifies this property is called the period of $z_0$.  These points exist between specific regions of the plane and may be called attracting, repelling or indifferent. \cite{beauty} \cite{tokyo} Attractors compete for influence on the plane and an initial point will be driven towards attractors by the system, else it will remain on the boundry. Similarly, a repelling point drives the initial point away while all other points are indifferent and do not affect points on the plane. The distribution of these points in the plane is commanded by the parameter $c$ which also affects the boundaries of the given regions \cite{beauty}\\
 
 The Julia set is the boundary of a single domain of attraction and contains points which do not go to that attractor. \cite{beauty} Julia's geometry depends crucially on the attracting period point of the mapping. \cite{yang} Julia exhibits chaotic behavior \cite{hypertext} and like other chaotic sysmes \cite{goodwin} it displays strong sensitivity to initial conditions, and periodicity.
 
 \subsection{Examples}
-$f(z) = z^{2}$ \: \: \: \: \: the unit circle \cite{Fassett} \\
-$f(z) = z^{2}-2$ \: \: the line segment between -2 and 2 \\
 
-since complex numbers can be uniquely mapped into real space,  a one-to-one relationship can be established between C and R \cite{china}. To draw julia select an area of the complex plane and map it to an area A of the computer window and let one pixel represent one point in the set. \cite{china} using the foolowing algorithms
+\begin{exmp}
+$f(z) = z^{2}$ \cite{Fassett} \cite{yang}	 \\
+$f(z)$ has two fixed points. An attractor at 0 and a repeller at 1. 
+The filled in Julia set is the unit disc and $J_f$  is the unit circle.\\
+
+[image go here]
+\end{exmp}
+
+
+\begin{exmp}
+$f(z) = z^{2}-1$ \cite{yang} \\
+$f(z)$ has two repelling fixed points $\frac{1 \pm \sqrt{5} }{2}$ and an attracting two-cycle \{0,-1\}.
+Tracing the pre-images of the point $z_0 = \frac{1 - \sqrt{5} }{2} = -0.618 \hdots$ and solving $z^{2}_{-n+1} = z_{-n}$ recursively we get:
+\begin{align*}
+z_{-1} &= \pm z_0 = \pm 0.618 \hdots \\
+z_{-2} &= \pm 1.272 \hdots , \pm 0.618 \hdots\\
+z_{-3} &= \pm 1.5073 \hdots, \pm 0.5216\hdots i,  \pm 1.272 \hdots , \pm 0.618 \hdots\\
+&\mathrel{\makebox[\widthof{=}]{\vdots}}
+\end{align*}
+
+Thus the pre-images of $z_0$ spread out the Julia set.  
+[image go here]
+\end{exmp}
+
+
+\begin{exmp}
+$f(z) = z^{2}+c$ where  $c=0.12 + 0.74i$ \cite{yang} \\
+$f(z)$ has an attracting 3-cycle. At every point in the set, three pieces are connected. 
+We can see the self-similarity of the set by tracing the pre-image as in the previous example.
+[image]
+\end{exmp}
+
+
+
+\subsection{Drawing a Julia Fractal}
+Since complex numbers can be uniquely mapped into real space,  a one-to-one relationship can be established between $\mathbb{C}$ and $\mathbb{R}$  \cite{china}. To draw Julia, select an area of the complex plane and map it to an area $A$ of the computer window and let one pixel represent one point in the set\cite{china}.Using the following algorithm we can generate some graphical images of Julia.
 
 [algorithm go here]
 
@@ -108,14 +157,14 @@ since complex numbers can be uniquely mapped into real space,  a one-to-one rela
 
 \section{Application to Image  Encryption/Decryption and Compression}
 {\parindent0pt
-Image encryption is an effective technique to protect image security. Using a variety of algorithms, images can be scrambled into into keys which, given a cipher key, can be deciphered to reveal the original image. This can be used to transfer sensitive image documents via telecommunications, satellite and the internet without the fear of third party tampering or evesdropping. Algorithms for such process usually use public key protocol system  to exchange a secret key (or cipher) between two comminucators and then a secret key system to transfer sensistive data. \cite{moham} \\
+Image encryption is an effective technique to protect image security. Using a variety of algorithms, images can be scrambled into into keys which, given a cipher key, can be deciphered to reveal the original image. This can be used to transfer sensitive image documents via telecommunications, satellite and the internet without the fear of third party tampering or eavesdropping. Algorithms for such process usually use public key protocol system  to exchange a secret key (or cipher) between two communicators and then a secret key system to transfer sensitive data. \cite{moham} \\
 
-It is possible to generate cryptographic ciphers using fractal systems. Fractal ciphers have a smaller storage cost and also input sensitivity \cite{china} making them very difficult to crack while reducing memory needed to store encrypted information. By using the Julia set in particular to encode graphical information,  images can be efficiently encrypted at high quality with superior compression when compared to other methods, like JPEG.\cite{cotty} Only a few parameters are needed to generate keys  using Julia \cite{algo} and the sets properties create input sensitivy making these compressed images are much more difficult to decrypt. \cite{china}
+It is possible to generate cryptographic ciphers using fractal systems. Fractal ciphers have a smaller storage cost and also input sensitivity \cite{china} making them very difficult to crack while reducing memory needed to store encrypted information. By using the Julia set in particular to encode graphical information,  images can be efficiently encrypted at high quality with superior compression when compared to other methods, like JPEG.\cite{cotty} Only a few parameters are needed to generate keys  using Julia \cite{algo} and the sets properties create input sensitivity making these compressed images are much more difficult to decrypt. \cite{china}
 }
 
 \subsection{Fractal Dictionary}
 {\parindent0pt
-Graphical images can be encoded using fractal dictionary.\cite{china} Devised by Barnesley, an image can be partioned into non-overlapping blocks (range blocks) and  further sub-divided further into overlapping blocks (domain blocks). When the image is titled by range blocks which are each mapped individually to a domain block these mappings for a transform over the entire image. \\
+Graphical images can be encoded using fractal dictionary.\cite{china} Devised by Barnesley, an image can be partitioned into non-overlapping blocks (range blocks) and  further sub-divided further into overlapping blocks (domain blocks). When the image is titled by range blocks which are each mapped individually to a domain block these mappings for a transform over the entire image. \\
 
 It is possible to use this transformation to compress a gray-scale image to smaller size using a method called block truncated coding \cite{china}. This technique results in small images that do not lose information and generate artifacts during the compression process. A block can be converted to a binary value using:
 \begin{align*}
@@ -133,12 +182,12 @@ Where $x$ is a single pixel in a block of the image and $x_{ave}$ is the average
 {\parindent0pt
 Given an image in fractal geometry  Barnesleys collage theorem allows us to approximate the iterated function system associated with that image.\cite{iraq} Since fractal sets generally contain an infinite number of points with varying organization, specifying each point in the set is impossible. \cite{ifs}An approximating set, based on  relations between the original image of the attractor, is used to find the contractive (at most one fixed point) mapping to recreate the image. \\ 
 
-\cite{china} explains that given a domain block of size $B \times B$ the range black size is $R \times R$ for an $N \times N$ image. There are $(N-B+1) \times (N-B+1)$ overlapping domain blocks and $(N/R) \times (N/R)$ non-overlapping range blocks. The scheme uses self-similarity in an image and attempts to find the most similar looking domain block that minimizes distortion. While this effective at accurated encoding an decoding a given image it is unfortunately slow computationally. A 256x256 image would require 62 001 blocks of size 8x8 which means searching would require 62001x8 comparissions per range block. 
+Given a domain block of size $B \times B$ the range block size is $R \times R$ for an $N \times N$ image. There are $(N-B+1) \times (N-B+1)$ overlapping domain blocks and $(N/R) \times (N/R)$ non-overlapping range blocks.\cite{china} This scheme uses self-similarity in an image and attempts to find the most similar looking domain block that minimizes distortion. While this effective at accurate encoding an decoding a given image it is unfortunately slow computationally. A 256x256 image would require 62 001 blocks of size 8x8 which means searching would require 62001x8 comparisons per range block.
 }
 \subsection{Encryption and Decryption}
 {\parindent0pt
 \subsubsection{The Hilbert Curve}
-A two dimensional hilbert surve is draw by dividing a square evenly into four. From the center of the top-left square and a curve is drawn to the center of the bottom-left square, then to the center of the bottom-right square and finally to the center of the top right square. \cite{algo} Repeating this process over and over by continually dividing squares into four other squares and drawing in the same manner the result is a curve which fills the entire original square. \\
+A two dimensional Hilbert curve is draw by dividing a square evenly into four. From the center of the top-left square and a curve is drawn to the center of the bottom-left square, then to the center of the bottom-right square and finally to the center of the top right square. \cite{algo} Repeating this process over and over by continually dividing squares into four other squares and drawing in the same manner the result is a curve which fills the entire original square. \\
 
 Using an RGB colour model, each pixel in an image can be represented using 8 binary digits. By scrambling this bits in each colour layer (Red, Green, Blue) along the Hilbert curve we create a stream cipher. Give $A$, $B$, $C$ co-ordinates of an image with pixels:
 \begin{align*}
